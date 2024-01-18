@@ -476,3 +476,16 @@ int main(int argc, char** argv) {
     return 0;
 }
 
+/* compile & execute */
+
+//(copy this code to main.cpp)
+//compile in apollo: 
+// (using boost) g++ -std=c++11 -O3 -lm -I /usr/local/include/boost/ -o ../bin/main main.cpp
+// (not using boost) g++ -std=c++11 -O3 -lm -o ../bin/main main.cpp
+//execute in apollo: ../bin/main ../testcase/public5.txt ../output/public5.out
+
+/* verify */
+
+//(cd to verifier)
+//chmod 500 verify
+//./verify ../testcase/public5.txt ../output/public5.out
