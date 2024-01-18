@@ -1,5 +1,3 @@
-/Users/chuanghaoyu/Parallel-Programming
-
 openmp.cpp (openmp)
 
 pthread.cpp (openmp + pthread)
