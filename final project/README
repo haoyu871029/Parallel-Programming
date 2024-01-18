@@ -1,8 +1,5 @@
-openmp.cpp
-openmp
+openmp.cpp (openmp)
 
-pthread.cpp
-openmp + pthread
+pthread.cpp (openmp + pthread)
 
-mpi.cpp
-openmp + mpi
+mpi.cpp (openmp + mpi)
