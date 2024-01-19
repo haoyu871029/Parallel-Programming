@@ -1,2 +1,5 @@
+- [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/SkclAKwK6)
+- [online tool: markdown to pdf](https://md2pdf.netlify.app/)
+- [HW4 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw4/)
 - [HW4 Score - pp23s90](https://docs.google.com/spreadsheets/d/1JnFx8Byu1UGUygVXx1_bmjnZ2_kysicBdxEbUeFIY8E/edit?usp=sharing)
 - [HW4 Score - Public](https://docs.google.com/spreadsheets/d/1_tlAxMmPNZtAyxAvnj5Jn81Ez1vIqAUP_tz5d_SSduA/edit?usp=sharing)
