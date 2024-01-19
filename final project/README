@@ -1,5 +1,0 @@
-openmp.cpp (openmp)
-
-pthread.cpp (openmp + pthread)
-
-mpi.cpp (openmp + mpi)
