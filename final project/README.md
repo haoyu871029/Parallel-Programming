@@ -13,3 +13,4 @@
     > 在 openmp.cpp 的基礎上，利用 mpi 篩選出最好的 final cut size 寫入 output file
 ## url
 - [google slides: presentation](https://docs.google.com/presentation/d/149GhUorqxLvylHjvkFctsATc2HO3H4iDoY7Bdx6wEic/edit?usp=sharing)
+- [hackmd: final project 想法與筆記](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/SJZjPjwF6)
