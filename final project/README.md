@@ -1,6 +1,8 @@
 ## description
 實作 Fiduccia-Mattheyses algorithm，並使用 openmp、pthread、mpi 進行平行化。
 
+實作流程與平行化部分如下圖所示：
+
 ![figure](https://hackmd.io/_uploads/H1Z1sqvFp.png)
 ## version
 - openmp.cpp (openmp)
