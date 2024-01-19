@@ -1,3 +1,4 @@
+實作 Fiduccia-Mattheyses algorithm，並使用 openmp、pthread、mpi 進行平行化。
 ## version
 - openmp.cpp (openmp)
 - pthread.cpp (openmp + pthread)
