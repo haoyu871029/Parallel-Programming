@@ -56,14 +56,8 @@ void output(char* outFileName) {
     return;
 }
 
-int main(int argc, char* argv[]) {
-
-    total_time = omp_get_wtime();
-    
-    input(argv[1]);
-    
+void FW(){
     compute_time = omp_get_wtime();
-    /* main loop */
 	for (int k=0; k<n; ++k){
         #pragma omp parallel for schedule(dynamic, 1)
 		for (int i=0; i<n; ++i){
@@ -74,9 +68,13 @@ int main(int argc, char* argv[]) {
 		}
 	}
     compute_time = omp_get_wtime() - compute_time;
-    
+}
+
+int main(int argc, char* argv[]) {
+    total_time = omp_get_wtime();
+    input(argv[1]);
+    FW();
     output(argv[2]);
-    
     total_time = omp_get_wtime() - total_time;
 
     printf("\nTotal time:  %f\n", total_time);
