@@ -46,11 +46,11 @@ void output(char* outFileName) {
 }
 
 void FW(){
-	for (int k=0; k<n; ++k){
-		for (int i=0; i<n; ++i){
-			for (int j=0; j<n; ++j){
-				if (Dist[i][k] != INF && Dist[i][j] > Dist[i][k] + Dist[k][j])
-					Dist[i][j] = Dist[i][k] + Dist[k][j];
+    for (int k=0; k<n; ++k){
+        for (int i=0; i<n; ++i){
+            for (int j=0; j<n; ++j){
+                if (Dist[i][k] != INF && Dist[i][j] > Dist[i][k] + Dist[k][j])
+                    Dist[i][j] = Dist[i][k] + Dist[k][j];
 			}
 		}
 	}
@@ -63,5 +63,6 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
+//copy to hw3-1.cc
 //compile: "g++ -O3 -o hw3-1 hw3-1.cc" or "make"
 //execute: ./hw3-1 /home/pp23/share/hw3-1/cases/c01.1 c01.1.out
