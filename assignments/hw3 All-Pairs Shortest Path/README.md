@@ -1,7 +1,7 @@
 ## description
-hw3-1: CPU Floyd-Warshall Algorithm
-hw3-2: Single-GPU Blocked Floyd-Warshall Algorithm
-hw3-3: Multi-GPU Blocked Floyd-Warshall Algorithm
+- hw3-1: CPU Floyd-Warshall Algorithm
+- hw3-2: Single-GPU Blocked Floyd-Warshall Algorithm
+- hw3-3: Multi-GPU Blocked Floyd-Warshall Algorithm
 ## url
 - [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
 - [3-1 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw3-1/)
