@@ -63,6 +63,8 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-//copy to hw3-1.cc
-//compile: "g++ -O3 -o hw3-1 hw3-1.cc" or "make"
-//execute: ./hw3-1 /home/pp23/share/hw3-1/cases/c01.1 c01.1.out
+/* compile & execute */
+
+//(copy this code to hw3-1.cc)
+//compile in apollo: "g++ -O3 -o hw3-1 hw3-1.cc" or "make"
+//execute in apollo: ./hw3-1 /home/pp23/share/hw3-1/cases/c01.1 c01.1.out
