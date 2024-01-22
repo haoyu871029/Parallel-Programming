@@ -51,9 +51,9 @@ void FW(){
             for (int j=0; j<n; ++j){
                 if (Dist[i][k] != INF && Dist[i][j] > Dist[i][k] + Dist[k][j])
                     Dist[i][j] = Dist[i][k] + Dist[k][j];
-			}
-		}
-	}
+            }
+        }
+    }
 }
 
 int main(int argc, char* argv[]) {

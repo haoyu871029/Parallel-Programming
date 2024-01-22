@@ -50,13 +50,13 @@ void output(char* outFileName) {
 void FW(){
     for (int k=0; k<n; ++k){
         #pragma omp parallel for schedule(dynamic, 1)
-		for (int i=0; i<n; ++i){
-			for (int j=0; j<n; ++j){
-				if (Dist[i][k] != INF && Dist[i][j] > Dist[i][k] + Dist[k][j])
-					Dist[i][j] = Dist[i][k] + Dist[k][j];
-			}
-		}
-	}
+        for (int i=0; i<n; ++i){
+            for (int j=0; j<n; ++j){
+                if (Dist[i][k] != INF && Dist[i][j] > Dist[i][k] + Dist[k][j])
+                    Dist[i][j] = Dist[i][k] + Dist[k][j];
+            }
+        }
+    }
 }
 
 int main(int argc, char* argv[]) {
