@@ -1,0 +1,146 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+const int INF = ((1 << 30) - 1);
+const int V = 50010;
+void input(char* inFileName);
+void output(char* outFileName);
+void block_FW(int B);
+int ceil(int a, int b);
+void cal(int B, int Round, int block_start_x, int block_start_y, int block_width, int block_height);
+
+int n, m;
+//n: number of vertices
+//m: number of edges
+
+static int Dist[V][V];
+
+int main(int argc, char* argv[]) {
+    input(argv[1]);
+    int B = 512;
+    block_FW(B);
+    output(argv[2]);
+    printf("\n");
+    return 0;
+}
+
+void input(char* infile) {
+    FILE* file = fopen(infile, "rb");
+    fread(&n, sizeof(int), 1, file);
+    fread(&m, sizeof(int), 1, file);
+
+/* build default data matrix */
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i == j) {
+                Dist[i][j] = 0;
+            } else {
+                Dist[i][j] = INF;
+            }
+        }
+    }
+
+/* initialize data matrix */
+    int pair[3];
+    for (int i = 0; i < m; ++i) {
+        fread(pair, sizeof(int), 3, file);
+        Dist[pair[0]][pair[1]] = pair[2];
+    }
+
+
+    printf("\n");
+    printf("initialize data matrix: ");
+    printf("\n\n");    
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (Dist[i][j] == INF) {
+                printf("%5s", "INF");
+            } else {
+                printf("%5d", Dist[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    fclose(file);
+} //data matrix (Dist array) ok.
+
+void output(char* outFileName) {
+    FILE* outfile = fopen(outFileName, "w");
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (Dist[i][j] >= INF) Dist[i][j] = INF;
+        }
+        fwrite(Dist[i], sizeof(int), n, outfile);
+    }
+    fclose(outfile);
+}
+
+int ceil(int a, int b) { return (a + b - 1) / b; } //向上取整
+
+void block_FW(int B) {
+    int round = ceil(n, B); //grid matrix: round * round
+    printf("total rounds: %d\n\n", round);
+
+    for (int r = 0; r < round; ++r) {
+        printf("round %d\n", r);
+        fflush(stdout);
+
+        /* Phase 1*/
+        cal(B, r, r, r, 1, 1);      //處理位於對角線上的子塊 
+
+        /* Phase 2*/
+        cal(B, r, r, 0, r, 1);                      //處理pivot左邊所有子塊
+        cal(B, r, r, r+1, round-r-1, 1);            //處理pivot右邊所有子塊
+        cal(B, r, 0, r, 1, r);                      //處理pivot上面所有子塊
+        cal(B, r, r+1, r, 1, round-r-1);            //處理pivot下面所有子塊
+
+        /* Phase 3*/
+        cal(B, r, 0, 0, r, r);                      //處理剩餘子塊中左上所有子塊               
+        cal(B, r, 0, r+1, round-r-1, r);            //處理剩餘子塊中右上所有子塊            
+        cal(B, r, r+1, 0, r, round-r-1);            //處理剩餘子塊中左下所有子塊                
+        cal(B, r, r+1, r+1, round-r-1, round-r-1);  //處理剩餘子塊中右下所有子塊
+    }
+}
+
+void cal(int B, int Round, int block_start_x, int block_start_y, int block_width, int block_height) {
+// 處理block中的最短路徑，可一次算多個blocks
+
+    int block_end_x = block_start_x + block_height;
+    int block_end_y = block_start_y + block_width;
+
+    for (int b_i = block_start_x; b_i < block_end_x; ++b_i) { //1,2
+        for (int b_j = block_start_y; b_j < block_end_y; ++b_j) { //0
+        /* To calculate B*B elements in the block (b_i, b_j) */
+    
+            for (int k = Round*B; (k < (Round+1)*B) && (k < n); ++k) {
+            /* For each block, it need to compute B times */
+
+                // To calculate original index of elements in the block (b_i, b_j)
+                // For instance, original index of (0,0) in block (1,2) is (2,5) for V=6,B=2
+                int block_internal_start_x = b_i * B; 
+                int block_internal_end_x = (b_i + 1) * B;
+                int block_internal_start_y = b_j * B; 
+                int block_internal_end_y = (b_j + 1) * B;
+
+                if (block_internal_end_x > n) block_internal_end_x = n; //因為不處理沒有資料的entry
+                if (block_internal_end_y > n) block_internal_end_y = n; //因為不處理沒有資料的entry
+
+                for (int i = block_internal_start_x; i < block_internal_end_x; ++i) {
+                    for (int j = block_internal_start_y; j < block_internal_end_y; ++j) {
+                    /* For each entry in block (b_i,b_j) */
+                        if (Dist[i][j] > Dist[i][k] + Dist[k][j]) {
+                            Dist[i][j] = Dist[i][k] + Dist[k][j];
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* compile & execute */
+
+// compile in hades01: "g++  -o seq seq.cc" or "make seq"
+// execute in hades01: ./seq /home/pp23/share/hw3-2/cases/c01.1 c01.1.out

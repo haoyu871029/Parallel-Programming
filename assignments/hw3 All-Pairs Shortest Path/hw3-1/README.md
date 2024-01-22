@@ -1,5 +1,5 @@
 - seq.cc
-    > Floyd-Warshall Algorithm 循序版本
+    > Floyd-Warshall Algorithm 的循序版本
 - openmp.cc
     > 基於 seq.cc，利用 opemMP API 在 "build default matrix" 以及 "FW()" 兩處作平行化
 - openmp_time.cc

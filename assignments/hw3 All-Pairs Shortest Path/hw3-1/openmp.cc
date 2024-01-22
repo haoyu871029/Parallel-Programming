@@ -68,6 +68,7 @@ int main(int argc, char* argv[]) {
 
 /* compile & execute */
 
-//(copy this code to hw3-1.cc)
-//compile in apollo: "g++ -O3 -fopenmp -o hw3-1 hw3-1.cc" or "make"
-//execute in apollo: srun -N1 -n1 -c5 ./hw3-1 /home/pp23/share/hw3-1/cases/c01.1 c01.1.out
+// (copy this code to hw3-1.cc)
+// compile in apollo: "g++ -O3 -fopenmp -o hw3-1 hw3-1.cc" or "make"
+// execute in apollo: srun -N1 -n1 -c5 ./hw3-1 /home/pp23/share/hw3-1/cases/c01.1 c01.1.out
+// judge in apollo: hw3-1-judge
