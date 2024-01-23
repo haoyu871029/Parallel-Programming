@@ -1,0 +1,8 @@
+# !/bin/bash
+
+# make
+# srun -p prof -n 1 --gres=gpu:1 nvprof --metrics inst_per_warp,ipc,issued_ipc,branch_efficiency,shared_utilization,shared_efficiency,inst_integer,inst_control,inst_compute_ld_st,gst_efficiency,gld_efficiency --events shared_st_bank_conflict,shared_ld_bank_conflict --print-gpu-trace ./hw3-2 ../../../share/hw3-2/cases/c15.1 ./c15.1.out ./prof15.log
+# srun -p prof -n 1 --gres=gpu:1 nvprof --metrics inst_per_warp,ipc,issued_ipc,branch_efficiency,shared_utilization,shared_efficiency,inst_integer,inst_control,inst_compute_ld_st,gst_efficiency,gld_efficiency --events shared_st_bank_conflict,shared_ld_bank_conflict --print-gpu-trace ./hw3-2 ../../../share/hw3-2/cases/p26k1 ./p26k1 ./p26k1.log
+# nvprof --metrics achieved_occupancy,sm_efficiency,shared_load_throughput,shared_store_throughput,gld_throughput,gst_throughput --events shared_st_bank_conflict,shared_ld_bank_conflict --print-gpu-trace ./hw3-2 ../../../share/hw3-2/cases/c15.1 ./c15.1.out ./prof15.log
+nvprof --metrics ipc,achieved_occupancy,sm_efficiency,shared_load_throughput,shared_store_throughput,gld_throughput,gst_throughput ./hw3-2 /home/pp23/share/hw3-2/cases/c15.1 ./c15.1.out ./profc15.log
+nvprof --metrics ipc,inst_integer,shared_load_throughput,shared_store_throughput,gld_throughput,gst_throughput,dram_read_throughput,dram_write_throughput ./hw3-2 /home/pp23/share/hw3-2/cases/c15.1 ./c15.1.out ./prof15.log
