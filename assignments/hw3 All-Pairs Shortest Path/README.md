@@ -13,6 +13,7 @@
 ## Announcement
 ![截圖 2024-01-23 下午1.05.21](https://hackmd.io/_uploads/Hy6fYTnKp.png)
 ## 待辦
+- Discription 附圖
 - 整理各個小版本之間的差異
 - 把 report 處理到能轉成 PDF
 - 附上其他補充資料 (對應講義、NCHC的部分等等)
