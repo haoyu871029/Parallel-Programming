@@ -1,5 +1,5 @@
 ## Description
-這次作業的目標是實作演算法來解決 All-Pairs Shortest Path Problem，需分成三部分來實作：
+這次作業的目標是實作演算法來解決 All-Pairs Shortest Path Problem，再將程式做平行化，需分成三部分來實作：
 - hw3-1: CPU Floyd-Warshall Algorithm
     > 我選擇實作的演算法是 Floyd-Warshall Algorithm，由於作業要求以 threading 的方式來作平行化，我選擇利用 OpenMP API 來平行化 sequential 版本的 Floyd-Warshall Algorithm
 - hw3-2: Single-GPU Blocked Floyd-Warshall Algorithm
