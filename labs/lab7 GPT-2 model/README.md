@@ -6,3 +6,5 @@
 - [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/HkwjzDRt6)
 ## 待辦
 - announcement 的截圖
+- 原作業檔
+- fine-tune 前後的模型回覆差異
