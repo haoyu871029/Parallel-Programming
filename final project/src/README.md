@@ -1,4 +1,4 @@
-## Version:
+## Version
 - openmp.cpp (openmp)
     > 在 Fn(), Tn(), G(), update_gain() 等函式中加入 openmp API 作平行化。
 - pthread.cpp (openmp + pthread)
