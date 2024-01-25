@@ -11,4 +11,3 @@ UCP Objects 之間如何透過函式呼叫來互動，整理如下圖所示：(�
 - [HW4 Score - pp23s90](https://docs.google.com/spreadsheets/d/1JnFx8Byu1UGUygVXx1_bmjnZ2_kysicBdxEbUeFIY8E/edit?usp=sharing)
 - [HW4 Score - Public](https://docs.google.com/spreadsheets/d/1_tlAxMmPNZtAyxAvnj5Jn81Ez1vIqAUP_tz5d_SSduA/edit?usp=sharing)
 ## 待辦
-- 原作業檔
