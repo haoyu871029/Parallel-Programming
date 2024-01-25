@@ -1,6 +1,6 @@
 ## Version
 - seq.cc
-    > Blocked Floyd-Warshall Algorithm 的循序版本
+    > Blocked Floyd-Warshall Algorithm 的 sequential 版本
 - hw3-2_gm.cu (global memory version)
     > phase 1,2,3 皆不使用 shared memory，參考與更改 entries 的值都是直接對 global memory 的 d_dist_matrix 進行操作
 - hw3-2_sm.cu (shared memory version)
@@ -22,3 +22,9 @@
     > ex. 欲呈現測試 c15.1 時 ipc, achieved_occupancy, sm_efficiency 這三項 metrics 的結果
     > 
     > $ nvprof --metrics ipc,achieved_occupancy,sm_efficiency ./hw3-2 /home/pp23/share/hw3-2/cases/c15.1 ./c15.1.out ./profc15.log
+## 作業原檔
+![截圖 2024-01-26 上午12.27.47](https://hackmd.io/_uploads/rkgz2-x9p.png)
+
+不知道為什麼裡面要多一個 hw3-2 資料夾然後放一樣的東西
+
+hw3-2.cu 就是 Blocked Floyd-Warshall Algorithm 的 sequential 版本

@@ -8,3 +8,5 @@
 ## Other files
 - Makefile
     > (編譯 hw3-3.cc) $ make hw3-3
+## 作業原檔
+![截圖 2024-01-26 上午12.51.52](https://hackmd.io/_uploads/ryE2-Gl9a.png)
