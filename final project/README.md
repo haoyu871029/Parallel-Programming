@@ -14,3 +14,7 @@
 ## URL
 - [google slides: presentation](https://docs.google.com/presentation/d/149GhUorqxLvylHjvkFctsATc2HO3H4iDoY7Bdx6wEic/edit?usp=sharing)
 - [hackmd: final project 想法與筆記](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/SJZjPjwF6)
+## 待辦
+- 附上其他補充資料 (對應講義)
+- 補幾個測資
+- 寫「把code複製到主檔案」
