@@ -1,3 +1,4 @@
+## Version
 - seq.cc
     > Blocked Floyd-Warshall Algorithm 的循序版本
 - hw3-2_gm.cu (global memory version)
@@ -8,6 +9,13 @@
     > 概念上和 shared memory version 相同，差別在於為了充分利用一個 device block 的 shared memory 最大容量 (49152 = 3＊64＊64 bytes)，blocking factor 會設定為 64，因此在 phase 1,2,3 中每條 thread 一次可以處理 4 entries
 - hw3-2_bb_time.cu
     > 基於 hw3-2_bb.cu，在 input, output 部分利用 omp_get_wtime() 來計時，和 device 端相關的操作則利用 cudaEvent 來計時。
+
+欲執行特定版本，先將該版本的程式碼複製到 hw3-2.cc，再編譯執行。
+## Other files
+- Makefile
+    > (編譯 hw3-2.cc) $ make hw3-2
+    > 
+    > (編譯 seq.cc) $ make seq
 - profile.sh
     > 裡面的這些指令可以根據你選擇的 metrics 去呈現 device 端在運行時的各項資訊
     > 
