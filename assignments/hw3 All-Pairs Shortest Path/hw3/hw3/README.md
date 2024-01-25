@@ -1,3 +1,4 @@
+## Version
 - hw3-1.cc
     > openmp.cc in hw3-1
 - hw3-2.cu
@@ -6,6 +7,13 @@
     > hw3-3.cu in hw3-3
 
 All of the above files can be compiled with the same Makefile.
+## Other files
+- Makefile
+    > (compile hw3-1.cc) $ make hw3-1
+    > 
+    > (compile hw3-2.cu) $ make hw3-2
+    > 
+    > (compile hw3-3.cu) $ make hw3-3
 
 ![截圖 2024-01-23 下午2.20.32](https://hackmd.io/_uploads/r12h50nFp.png)
 
