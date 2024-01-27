@@ -1,16 +1,22 @@
 ## MPI
-- lab1: pixels in circle
-- hw1: odd-even sort
+- Lab1: Platform Introduction & MPI
+    > Pixels in Circle
+- Hw1: Odd-Even Sort
 ## Pthread & OpenMP
-- hw2: Mandelbrot set
+- Hw2: Mandelbrot Set
 ## CUDA
-- lab3: edge detection with sobel operator (CUDA Basic)
-- lab4: edge detection with sobel operator (CUDA Advance)
-- hw3: all-pairs shortest path
+- Lab3: CUDA Basic
+    > Edge Detection using Sobel Operator
+- Lab4: CUDA Advance
+    > Edge Detection using Sobel Operator
+- Hw3: All-Pairs Shortest Path
+    > Floyd-Warshall Algorithm
 ## OpenACC
-- lab5: DNN model
+- Lab5: OpenACC
+    > DNN model
 ## UCX
-- hw4: observe the behavior of UCX yourself
+- Hw4: observe the behavior of UCX yourself
 ## Others
-- lab7: GPT-2 model
-- final project: Fiduccia-Mattheyses algorithm
+- Lab7: AI benchmark
+    > GPT-2 model
+- Final Project: Fiduccia-Mattheyses Algorithm
