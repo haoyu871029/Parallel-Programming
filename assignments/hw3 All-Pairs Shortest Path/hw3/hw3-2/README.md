@@ -25,6 +25,6 @@
 ## 作業原檔
 ![截圖 2024-01-26 上午12.27.47](https://hackmd.io/_uploads/rkgz2-x9p.png)
 
-不知道為什麼裡面要多一個 hw3-2 資料夾然後放一樣的東西
-
-hw3-2.cu 就是 Blocked Floyd-Warshall Algorithm 的 sequential 版本
+- 不知道為什麼裡面要多一個 hw3-2 資料夾然後放一樣的東西
+- hw3-2.cu 是給我們的 template
+- seq.cc 就是 Blocked Floyd-Warshall Algorithm 的 sequential 版本
