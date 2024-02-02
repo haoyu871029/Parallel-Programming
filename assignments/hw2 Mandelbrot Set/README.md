@@ -1,7 +1,5 @@
 ## Description
-本次作業為利用 Pthread、OpenMP、MPI 等方式來平行化 Mandelbrot Set 的計算以減少程式執行時間，並透過 vectorization 來作更進一步的優化。
-
-下圖說明為 Mandelbrot Set 的介紹與計算方式，測資會給定複座標的橫軸與縱軸範圍($x0,$x1,$y0,$y1)，以及輸出圖片的大小($w,$h)，work() 會先計算圖片中每個 pixel 代表的迭代計算結果 (pixel_value)，write_png() 再將所有 pixel_value 對應成顏色來輸出成圖片，即可得到 Mandelbrot Set 的圖形。
+本次作業為利用 Pthread、OpenMP、MPI 等方式來平行化 Mandelbrot Set 的計算，以減少程式執行時間，並透過 Vectorization 來作更進一步的優化。下圖說明為 Mandelbrot Set 的介紹與計算方式，測資會給定複座標的橫軸與縱軸範圍 ($x0,$x1,$y0,$y1)，以及輸出圖片的大小 ($w,$h)，work() 會先計算圖片中每個 pixel 代表的迭代計算結果 pixel_value，write_png() 再將所有 pixel_value 對應成顏色來輸出成圖片，即可得到 Mandelbrot Set 的圖形。
 
 ![problem](/assignments/hw2%20Mandelbrot%20Set/images/problem.png)
 ## Result
