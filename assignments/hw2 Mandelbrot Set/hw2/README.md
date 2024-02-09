@@ -4,9 +4,9 @@
 - hw2b
     > 此資料夾內包含了同樣是 Hybrid (MPI+OpenMP)，但用不同方式來進行平行化的各版本程式
 - hw2a.cc
-    > hw2a_vec_v2.cc in hw2a
+    > hw2a_vec.cc in hw2a
 - hw2b.cc
-    > hw2b_vec_v2.cc in hw2b
+    > hw2b_vec.cc in hw2b
 - hw2seq.cc
     > sequential version
 - Makefile
