@@ -1,23 +1,23 @@
 ## Assignments & labs 分類
-- MPI, Pthread, OpenMP
-    - lab1: Platform Introduction & MPI
-        > Pixels in Circle
-    - hw1: Odd-Even Sort
-    - hw2: Mandelbrot Set
-- GPU Programming (CUDA, OpenACC)
-    - lab3: CUDA Basic
-        > Edge Detection using Sobel Operator
-    - lab4: CUDA Advance
-        > Edge Detection using Sobel Operator
-    - hw3: All-Pairs Shortest Path
-        > Floyd-Warshall Algorithm
-    - lab5: OpenACC
-        > DNN model
-- Others
-    - lab7: AI benchmark
-        > GPT-2 model
-    - hw4: observe the behavior of UCX yourself
-    - Final Project: Fiduccia-Mattheyses Algorithm
+### MPI, Pthread, OpenMP
+- lab1: Platform Introduction & MPI
+    > Pixels in Circle
+- hw1: Odd-Even Sort
+- hw2: Mandelbrot Set
+### GPU Programming (CUDA, OpenACC)
+- lab3: CUDA Basic
+    > Edge Detection using Sobel Operator
+- lab4: CUDA Advance
+    > Edge Detection using Sobel Operator
+- hw3: All-Pairs Shortest Path
+    > Floyd-Warshall Algorithm
+- lab5: OpenACC
+    > DNN model
+### Others
+- lab7: AI benchmark
+    > GPT-2 model
+- hw4: observe the behavior of UCX yourself
+- Final Project: Fiduccia-Mattheyses Algorithm
 ## 作業報告連結
 - [Homework 2: Mandelbrot Set - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
 - [Homework 3: All-Pairs Shortest Path - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
