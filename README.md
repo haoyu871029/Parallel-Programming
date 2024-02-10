@@ -1,27 +1,25 @@
-## 作業 & labs 分類
-- MPI
+## Assignments & labs 分類
+- MPI, Pthread, OpenMP
     - lab1: Platform Introduction & MPI
         > Pixels in Circle
     - hw1: Odd-Even Sort
-- Pthread & OpenMP
     - hw2: Mandelbrot Set
-- CUDA
+- GPU Programming (CUDA, OpenACC)
     - lab3: CUDA Basic
         > Edge Detection using Sobel Operator
     - lab4: CUDA Advance
         > Edge Detection using Sobel Operator
     - hw3: All-Pairs Shortest Path
         > Floyd-Warshall Algorithm
-- OpenACC
     - lab5: OpenACC
         > DNN model
-- UCX
-    - hw4: observe the behavior of UCX yourself
 - Others
     - lab7: AI benchmark
         > GPT-2 model
+    - hw4: observe the behavior of UCX yourself
     - Final Project: Fiduccia-Mattheyses Algorithm
 ## 作業報告連結
+- [Homework 2: Mandelbrot Set - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
 - [Homework 3: All-Pairs Shortest Path - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
 - [Homework 4: Observe the behavior of UCX yourself - report](https://hackmd.io/mvXCXC_VRoSxfpW7CNg4wg)
 ## 其他參考連結
@@ -30,5 +28,8 @@
 - [markdown to pdf 工具](https://md2pdf.netlify.app/)
     > 輸出比 vscode 的 extension 好看，圖片支援也比較方便，但要在 hackmd 把大小確定後，再重截一次到 hackmd，再把連結貼過去。程式碼區塊要將「Transform/顯示更多設定/背景圖型」勾選起來才會出現。
 ## 待辦
-- 更新一下每個作業的第一頁的 README.md，加檔案說明、結果簡述+圖
+- 更新一下每個作業的第一頁的 README.md
+    > 加檔案說明
+    > 加結果簡述+圖
 - 新增每個作業的 images 資料夾
+- 每個報告 hackmd，每個章節小目錄
