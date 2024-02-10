@@ -8,7 +8,7 @@
 - hw2b.cc
     > hw2b_vec.cc in hw2b
 - hw2seq.cc
-    > sequential version
+    > sequential version by TA
 - Makefile
     > 可編譯 hw2a、hw2b、hw2seq 這三個程式的 Makefile
     > 

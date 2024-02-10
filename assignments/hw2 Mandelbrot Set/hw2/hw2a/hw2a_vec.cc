@@ -31,19 +31,19 @@ void* work(void* tid){
     for (int j = height-1-*id; j>=0; j-=thread_num) {
         double b0 = lower + j*range_per_unit_h;
         __m128d b0s = _mm_load1_pd(&b0);
-        for (int i=0; i<width; i++) { //width=11 , 0 2 4 6 8 
+        for (int i=0; i<width; i+=2) { //width=11 , 0 2 4 6 8 
             if (i+1 < width) {
-                int pixel_values[2] = {0,0};
-                int finish[2] = {0,0};
                 double a0[2] = {left + i*range_per_unit_w, left + (i+1)*range_per_unit_w};
                 __m128d a0s = _mm_load_pd(a0);
-                
+
+                int pixel_values[2] = {0,0};
+                int finish[2] = {0,0};                
                 __m128d as = _mm_set_pd(0, 0);
                 __m128d bs = _mm_set_pd(0, 0);
                 __m128d ls = _mm_set_pd(0, 0); //length_squareds
                 __m128d temp;
 
-                while (!finish[0] || !finish[1]) {   
+                while (!finish[0] || !finish[1]) {//因為可能其中一個因為不滿足條件而提早結束迭代
                     /* 判斷部分 */
                     if (!finish[0]) {
                         if (pixel_values[0]<iters && _mm_comilt_sd(ls, fours))
@@ -64,10 +64,8 @@ void* work(void* tid){
                     as = temp; //a' = a*a - b*b + a0
                     ls = _mm_add_pd(_mm_mul_pd(as, as), _mm_mul_pd(bs, bs)); //length_squared |Zk|^2 = a'*a' + b'*b'               
                 }
-
                 image[row_index*width+i] = pixel_values[0]; 
-                image[row_index*width+i+1] = pixel_values[1];
-                i++;  
+                image[row_index*width+i+1] = pixel_values[1]; 
             }
             else {
                 double a0 = left + (i * range_per_unit_w);

@@ -156,6 +156,6 @@ int main(int argc, char **argv){
 /* compile & judge */
 //(copy this code to hw2b.cc)
 //module load mpi/latest
-//compile: mpicxx -lm -O3 -fopenmp hw2b.cc -lpng -o hw2b
+//compile: "mpicxx -lm -O3 -fopenmp hw2b.cc -lpng -o hw2b" or "make hw2b"
 //execute: srun -N1 -n4 -c4 ./hw2b hw2b.png 10000 -2 2 -2 2 800 800
 //judge: hw2b-judge (about 484s)
