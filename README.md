@@ -19,9 +19,9 @@
 - hw4: observe the behavior of UCX yourself
 - Final Project: Fiduccia-Mattheyses Algorithm
 ## 作業報告連結
-- [Homework 2: Mandelbrot Set - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
-- [Homework 3: All-Pairs Shortest Path - report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
-- [Homework 4: Observe the behavior of UCX yourself - report](https://hackmd.io/mvXCXC_VRoSxfpW7CNg4wg)
+- [Homework 2: Mandelbrot Set](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
+- [Homework 3: All-Pairs Shortest Path](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
+- [Homework 4: Observe the behavior of UCX yourself](https://hackmd.io/mvXCXC_VRoSxfpW7CNg4wg)
 ## 其他參考連結
 - [2021 上課錄影](https://drive.google.com/drive/folders/1A5eKa2ZCrQ5Z9yXPEuye1MdNgHKASpw-) 
     > (ch8 的 part2 以後沒錄影，可來[這](https://ocw.nthu.edu.tw/ocw/index.php?page=chapter&cid=231&chid=2640&video_url=https%3A%2F%2Focw.nthu.edu.tw%2Fvideosite%2Findex.php%3Fop%3Dwatch%26id%3D7705%26filename%3D1920_1080_3072.MP4%26type%3Dview%26cid%3D231%26chid%3D2640&name=L19C)看)
