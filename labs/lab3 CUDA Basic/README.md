@@ -1,4 +1,6 @@
 ## Description
+本次 lab 的主題是透過 sobel operator 來做 image edge detection，其中 sobel operator 的處理涉及 convolution calculation，image 中的 每個 pixel 會與兩個 filter matrix 進行矩陣運算，如下圖所示。而實作的目標為，設計 CUDA programming 來平行化此部分的運算，以加速處理速度。
+
 ![des](/labs/lab3%20CUDA%20Basic/images/des.png)
 - Edge Detection
     > Identifying points in a digital image at which the image brightness changes sharply
@@ -6,10 +8,6 @@
     > Used in image processing and computer vision, particularly within edge detection algorithms. Uses two 3x3 filter matrix gx, gy (one for horizontal changes, and one for vertical) which are convolved with the original image to calculate approximations of the derivatives. In this lab, we use 5x5 kernels.
 - Convolution Calculation
     > Iterate through the width and height of the image. For each pixel, multiply the filter matrix with original image element-wisely and sum them up.
-
-簡單敘述
-
-平行化目標
 ## Result
 ![result](/labs/lab3%20CUDA%20Basic/images/result.png)
 各測資的程式執行時間皆顯著下降
