@@ -1,5 +1,18 @@
 ## Description
+![des](/labs/lab3%20CUDA%20Basic/images/des.png)
+- Edge Detection
+    > Identifying points in a digital image at which the image brightness changes sharply
+- Sobel Operator
+    > Used in image processing and computer vision, particularly within edge detection algorithms. Uses two 3x3 filter matrix gx, gy (one for horizontal changes, and one for vertical) which are convolved with the original image to calculate approximations of the derivatives. In this lab, we use 5x5 kernels.
+- Convolution Calculation
+    > Iterate through the width and height of the image. For each pixel, multiply the filter matrix with original image element-wisely and sum them up.
 
+簡單敘述
+
+平行化目標
+## Result
+![result](/labs/lab3%20CUDA%20Basic/images/result.png)
+各測資的程式執行時間皆顯著下降
 ## 檔案說明
 - lab3
     > 此資料夾即為我在工作目錄下創建的 lab3 資料夾，包含 seq.cu、lab3.cu、Makefile 等檔案。
@@ -10,3 +23,4 @@
 ## URL
 - [NCHC Webpage](https://portal.apps.edu-cloud.nchc.org.tw), [NCHC Tutorial](https://hackmd.io/@enmingw32/pp-nchc)
 - [lab3 Scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab3/)
+- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/ryIWGdqia)
