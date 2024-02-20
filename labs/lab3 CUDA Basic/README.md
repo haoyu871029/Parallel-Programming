@@ -10,6 +10,7 @@
     > Iterate through the width and height of the image. For each pixel, multiply the filter matrix with original image element-wisely and sum them up.
 ## Result
 ![resu](/labs/lab3%20CUDA%20Basic/images/resu.png)
+
 將 sobel operator 的計算交給 device 端分配給 threads 來執行後，各測資的程式執行時間相較於 cpu version 皆顯著下降，而 filter matrix 若置於 constant memory 來存取，結果又略好於將其置於 local memory
 ## 檔案說明
 - lab3
