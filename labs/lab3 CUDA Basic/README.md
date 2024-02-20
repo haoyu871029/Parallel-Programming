@@ -9,11 +9,11 @@
 - Convolution Calculation
     > Iterate through the width and height of the image. For each pixel, multiply the filter matrix with original image element-wisely and sum them up.
 ## Result
-![results](/labs/lab3%20CUDA%20Basic/images/results.png)
-將 sobel operator 的計算交給 device 端分配給 threads 來執行後，各測資的程式執行時間相較於 cpu version 皆顯著下降。
+![resu](/labs/lab3%20CUDA%20Basic/images/resu.png)
+將 sobel operator 的計算交給 device 端分配給 threads 來執行後，各測資的程式執行時間相較於 cpu version 皆顯著下降，而 filter matrix 若置於 constant memory 來存取，結果又略好於將其置於 local memory
 ## 檔案說明
 - lab3
-    > 此資料夾即為我在工作目錄下創建的 lab3 資料夾，包含 seq.cu、lab3.cu、Makefile 等檔案。
+    > 此資料夾即為我在工作目錄下創建的 lab3 資料夾，包含 cpu version code, gpu version code, Makefile 等檔案。
 - slides & announcement
     > 此資料夾包含本次 lab 的說明簡報以及相關的上課講義。
 - images

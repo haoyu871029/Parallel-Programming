@@ -1,4 +1,5 @@
-/* lab3 GPU version */
+/* lab3 GPU version (access constant memory) */
+
 #include <iostream>
 #include <cstdlib>
 #include <cassert>
@@ -9,6 +10,22 @@
 #define MASK_X 5 
 #define MASK_Y 5
 #define SCALE 8
+
+__constant__ int deviceMask[MASK_N][MASK_X][MASK_Y];
+/* Hint 7 */
+// this variable is used by device
+int mask[MASK_N][MASK_X][MASK_Y] = { 
+    {{ -1, -4, -6, -4, -1},
+     { -2, -8,-12, -8, -2},
+     {  0,  0,  0,  0,  0}, 
+     {  2,  8, 12,  8,  2}, 
+     {  1,  4,  6,  4,  1}},
+    {{ -1, -2,  0,  2,  1}, 
+     { -4, -8,  0,  8,  4}, 
+     { -6,-12,  0, 12,  6}, 
+     { -4, -8,  0,  8,  4}, 
+     { -1, -2,  0,  2,  1}} 
+};
 
 int read_png(const char* filename, unsigned char** image, unsigned* height, unsigned* width, unsigned* channels) {
 
@@ -110,21 +127,6 @@ __global__ void sobel (unsigned char* s, unsigned char* t, unsigned height, unsi
     xBound = MASK_X / 2;
     yBound = MASK_Y / 2;
 
-    /* Hint 7 */
-    // this variable is used by device
-    int mask[MASK_N][MASK_X][MASK_Y] = { 
-        {{ -1, -4, -6, -4, -1},
-        { -2, -8,-12, -8, -2},
-        {  0,  0,  0,  0,  0}, 
-        {  2,  8, 12,  8,  2}, 
-        {  1,  4,  6,  4,  1}},
-        {{ -1, -2,  0,  2,  1}, 
-        { -4, -8,  0,  8,  4}, 
-        { -6,-12,  0, 12,  6}, 
-        { -4, -8,  0,  8,  4}, 
-        { -1, -2,  0,  2,  1}} 
-    };
-
     /* Hint 6 */
     // parallel job by blockIdx, blockDim, threadIdx
     for (i = 0; i < MASK_N; ++i) {//共兩圈，一圈處理水平filter，一圈處理垂直filter
@@ -143,9 +145,9 @@ __global__ void sobel (unsigned char* s, unsigned char* t, unsigned height, unsi
                     R = s[channels * (width * (y+v) + (x+u))   + 2];
                     G = s[channels * (width * (y+v) + (x+u))   + 1];
                     B = s[channels * (width * (y+v) + (x+u))   + 0];
-                    val[i*3+2] += R * mask[i][u + xBound][v + yBound];
-                    val[i*3+1] += G * mask[i][u + xBound][v + yBound];
-                    val[i*3+0] += B * mask[i][u + xBound][v + yBound];
+                    val[i*3+2] += R * deviceMask[i][u + xBound][v + yBound];
+                    val[i*3+1] += G * deviceMask[i][u + xBound][v + yBound];
+                    val[i*3+0] += B * deviceMask[i][u + xBound][v + yBound];
                 }
             }
         }
@@ -194,6 +196,7 @@ int main(int argc, char** argv) {
     
     /* Hint 2 */
     // cudaMemcpy(...) copy source image to device (filter matrix if necessary)
+    cudaMemcpyToSymbol(deviceMask, mask, MASK_N * MASK_X * MASK_Y * sizeof(int)); //此函式用於將數據從 host 端（CPU）記憶體複製到 device 端（GPU）上記憶體中。
     cudaMemcpy(device_s, host_s, height * width * channels * sizeof(unsigned char), cudaMemcpyHostToDevice);
     
     /* Hint 3 */
