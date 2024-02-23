@@ -137,8 +137,8 @@ __global__ void sobel (unsigned char* s, unsigned char* t, unsigned height, unsi
 
         /* 經過相鄰 pixels 的參與，算出該 pixel 的「RGB水平計算值」和「RGB垂直計算值」
            以 row major 去 index 相鄰 pixels */
-        for (v = -yBound; v < yBound+adjustY; ++v) {//v 代表水平方向的 offset
-            for (u = -xBound; u < xBound+adjustX; ++u) {//u 代表垂直方向的 offset
+        for (v = -yBound; v < yBound+adjustY; ++v) {
+            for (u = -xBound; u < xBound+adjustX; ++u) {
                 if ((x + u) >= 0 && (x + u) < width && (y + v) >= 0 && (y + v) < height) {//符合條件表示該相鄰 pixel 在圖片範圍內
                     R = s[channels * (width * (y+v) + (x+u))   + 2];
                     G = s[channels * (width * (y+v) + (x+u))   + 1];
