@@ -112,13 +112,21 @@ void write_png(const char* filename, png_bytep image, const unsigned height, con
 /* Hint 5 */
 // this function is called by host and executed by device
 __global__ void sobel (unsigned char* s, unsigned char* t, unsigned height, unsigned width, unsigned channels) {
+    
+    /* thread indexing */
+    
     int x = blockDim.x * blockIdx.x + threadIdx.x;
     int y = blockDim.y * blockIdx.y + threadIdx.y;
     if(x >= width || y >= height) 
         return;
 
+    /* 處理此 pixel 的初始 RGB 計算值 */
+
     float R_hor=0, G_hor=0, B_hor=0;
     float R_ver=0, G_ver=0, B_ver=0;
+
+    /* 經過相鄰 pixels 的參與，算出該 pixel 的「RGB水平計算值」和「RGB垂直計算值」
+       以 row major 去 index 相鄰 pixels */
 
     #pragma unroll 5
     for (int v = -yBound; v <= yBound; ++v) {
@@ -138,12 +146,17 @@ __global__ void sobel (unsigned char* s, unsigned char* t, unsigned height, unsi
         }
     }
 
+    /* 處理此 pixel 的最終 RGB 計算值 */
+
     float totalR = sqrt(R_hor * R_hor + R_ver * R_ver) / SCALE;
     float totalG = sqrt(G_hor * G_hor + G_ver * G_ver) / SCALE;
     float totalB = sqrt(B_hor * B_hor + B_ver * B_ver) / SCALE;
     const unsigned char cR = (totalR > 255.) ? 255 : totalR;
     const unsigned char cG = (totalG > 255.) ? 255 : totalG;
     const unsigned char cB = (totalB > 255.) ? 255 : totalB;
+
+    /* 將處理後的最終 RGB 計算值寫入代表該 pixel 的 3 個記憶體位置 */
+
     t[channels * (width * y + x) + 2] = cR;
     t[channels * (width * y + x) + 1] = cG;
     t[channels * (width * y + x) + 0] = cB;
@@ -153,42 +166,44 @@ int main(int argc, char** argv) {
 
     assert(argc == 3);
 
+    /* read the image to host src, and get height, width, channels */
+
     unsigned height, width, channels;
     unsigned char* host_s = NULL;
     read_png(argv[1], &host_s, &height, &width, &channels);
     cudaHostRegister(host_s, height * width * channels * sizeof(unsigned char), cudaHostRegisterDefault);
     
-    /* Hint 1 */
-    // cudaMalloc(...) for device src and device dst
+    /* cudaMalloc(...) for device src and device dst */
+
     unsigned char* device_s;
     cudaMalloc((void **)&device_s, height * width * channels * sizeof(unsigned char));
     unsigned char* device_t;
     cudaMalloc((void **)&device_t, height * width * channels * sizeof(unsigned char));
     
-    /* Hint 2 */
-    // cudaMemcpy(...) copy source image to device (filter matrix if necessary)
+    /* cudaMemcpy(...) copy source image to device (mask matrix if necessary) */
+
     cudaMemcpy(device_s, host_s, height * width * channels * sizeof(unsigned char), cudaMemcpyHostToDevice);
-    
-    /* Hint 3 */
+
+    /* decide to use how many blocks and threads & launch cuda kernel */
     // acclerate this function
+
     dim3 dimGrid(ceil(width/32.0), ceil(height/32.0), 1); //block: (行,列)
     dim3 dimBlock(32, 32, 1); //thread: (行,列)
     sobel<<<dimGrid, dimBlock>>>(device_s, device_t, height, width, channels);
     
-    /* Hint 4 */
-    // cudaMemcpy(...) copy result image to host
+    /* cudaMemcpy(...) copy result image to host */
+
     unsigned char* host_t = (unsigned char*) malloc(height * width * channels * sizeof(unsigned char));
     cudaMemcpy(host_t, device_t, height * width * channels * sizeof(unsigned char), cudaMemcpyDeviceToHost);
     
+    /* write PNG */
+
     write_png(argv[2], host_t, height, width, channels);
 
-    /* Free device memory */
+    /* Free host memory & device memory */
 
     cudaFree(device_s);
     cudaFree(device_t);
-
-    /* Free host memory */
-
     free(host_s);
     free(host_t);
 
