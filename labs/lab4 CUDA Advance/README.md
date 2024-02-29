@@ -12,7 +12,7 @@
 雖然還沒有實作 shared memory，但透過上述兩種方式做修正，已經能將程式的執行時間降低。
 ## 檔案說明
 - lab4
-    > 此資料夾即為我在工作目錄下創建的 lab4 資料夾，包含 Makefile 等檔案。
+    > 此資料夾即為我在工作目錄下創建的 lab4 資料夾，包含 lab3_bb.cu, lab4_cm.cu, lab4_source.cu, Makefile 等檔案。
 - slides & announcement
     > 此資料夾包含本次 lab 的說明簡報以及相關的上課講義。
 - images
