@@ -1,9 +1,11 @@
 ## Description
-主題與 lab3 相同，是透過 sobel operator 來做 image edge detection。而本次 lab 的目標，是透過實作 coalesced memory, lower precision, shared memory 等方式，去修改 lab3 實作的 CUDA program 或 TA 提供的 lab4 source code，以達到進一步的優化。
+主題與 lab3 相同，透過 sobel operator 來做 image edge detection
+
+而本次 lab 的目標，是透過實作 coalesced memory, lower precision, shared memory 等方式，去修改 lab3 實作的 CUDA program 或 TA 提供的 lab4 source code，以達到進一步的優化。
 ## Result
 ![res](/labs/lab4%20CUDA%20Advance/images/res.png)
 - Coalesced Memory
-    > 將 block dimension 從原本的 16x16 改為 32x32，讓同一個 warp 中的 threads 存取連續的 memory
+    > 將 block dimension 從原本的 16x16 改為 32x32，讓同一個 warp 中的 threads 存取連續的記憶體位置，以合併記憶體存取。
 - Lower Precision
     > 將 RGB 計算值的資料型態從原本的 double 改為 float，雖然降低了精度，但能在不影響正確性的情況下減少計算時間。
 
