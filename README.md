@@ -18,6 +18,7 @@
     > GPT-2 model
 - hw4: observe the behavior of UCX yourself
 ## 2. 作業報告連結
+- [Homework 1: Odd-Even Sort](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJpWJ-g06)
 - [Homework 2: Mandelbrot Set](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
 - [Homework 3: All-Pairs Shortest Path](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkguXJ3Fp)
 - [Homework 4: Observe the behavior of UCX yourself](https://hackmd.io/mvXCXC_VRoSxfpW7CNg4wg)
