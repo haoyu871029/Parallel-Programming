@@ -19,7 +19,7 @@ Ver_B: hw1_v3.cc
 如上圖所示，在固定 node 數的情況下，隨著運行的 process 數增加，兩個版本的程式執行時間皆有呈現減少的趨勢，具 strong scalability
 ## 檔案說明
 - hw1
-    > 此資料夾即為我在工作目錄下創建的 hw1 資料夾，裡面包含了
+    > 此資料夾即為我在工作目錄下創建的 hw1 資料夾，裡面包含了各版本的實作檔、測資讀取範例程式、Makefile 等等。
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 - slides & announcement
