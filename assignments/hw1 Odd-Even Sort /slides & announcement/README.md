@@ -1,6 +1,8 @@
 ## Announcement
 ![ann](/assignments/hw1%20Odd-Even%20Sort%20/images/ann.png)
 ## 作業原檔
+/home/pp23/share/hw1
+
 ![source](/assignments/hw1%20Odd-Even%20Sort%20/images/source.png)
 - testcases
     > 此為測資資料夾，其中的：
