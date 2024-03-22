@@ -18,7 +18,7 @@ Pthread version (左) 與 Hybrid version (右) 都有做出不錯的 Strong Scal
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 - slides & announcement
-    > 此資料夾包含本次作業的說明文件、補充簡報，以及相關章節的上課講義。
+    > 此資料夾有作業公告以及作業原檔說明，並包含本次作業的說明文件(spec)、相關章節的上課講義與簡報。
 ## URL
 - [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
 - [hw2a scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw2a/)、[hw2b scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw2b/)
