@@ -174,3 +174,9 @@ int main(int argc, char** argv) {
 //execute: srun -N1 -n5 ./hw1 4 01.in 01.out
 //check: hw1-floats /home/pp23/share/hw1/testcases/01.out 01.out
 //judge: hw1-judge
+
+/* Profile: IPM dynamic way */
+
+//$ module load ipm/latest
+//$ IPM_REPORT=full IPM_REPORT_MEM=yes IPM_LOG=full LD_PRELOAD=/opt/ipm/lib/libipm.so srun -n<process> ./<yout program>
+//$ ipm_parse -html <output_file>.ipm.xml
