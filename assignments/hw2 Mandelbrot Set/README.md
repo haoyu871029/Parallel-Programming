@@ -9,7 +9,7 @@
 
 Pthread version (左) 與 Hybrid version (右) 都有做出不錯的 Strong Scalibility
 
-![rt](/assignments/hw2%20Mandelbrot%20Set/images/r_t.png)
+![rt](/assignments/hw2%20Mandelbrot%20Set/images/rt.png)
 
 在測資不大的情況下，Hybrid version 的總執行時間較 Pthread version 長，而 Vectorization 確實可以降低總執行時間，但效果隨著 threads 數量增多而越不明顯。
 ## 檔案說明
