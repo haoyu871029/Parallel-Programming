@@ -18,6 +18,6 @@
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 ## URL
+- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/S1Sts9X26)
 - [NCHC Webpage](https://portal.apps.edu-cloud.nchc.org.tw), [NCHC Tutorial](https://hackmd.io/@enmingw32/pp-nchc)
 - [lab3 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab4/), [lab4 slides](https://docs.google.com/presentation/d/1AH-5ZQ32tTVJh7zge4Sqej6O6GhY8Gz-0iqZQ8exyNM/edit?usp=sharing)
-- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/S1Sts9X26)

@@ -6,7 +6,7 @@ In each phase, processes perform compare-and-swap operations repeatedly as follo
 
 Simple case：
 
-![ex](/assignments/hw1%20Odd-Even%20Sort%20/images/ex.png)
+![ex](/assignments/hw1%20Odd-Even%20Sort%20/images/sim.png)
 
 更詳細的作業說明、實作要求與限制、報告規定等，請參考 hw1_spec.pdf
 ## Result

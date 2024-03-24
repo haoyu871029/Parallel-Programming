@@ -3,11 +3,14 @@ UCX 實作/支援 MPI processes 之間的溝通行為，本次作業的重點是
 
 UCP Objects 之間如何透過函式呼叫來互動，整理如下圖所示：(主程式為 ucp_hello_world.c)
 
-![architecture](https://hackmd.io/_uploads/BkKUj9PYp.png)
+![architecture](/assignments/hw4%20Observe%20the%20behavior%20of%20UCX%20yourself/images/des.png)
+## 檔案說明
+- images
+    > 存放此 repo 中所有 README.md 用到的圖片。
+- slides & announcement
+    > 此資料夾有作業公告以及作業原檔說明，並包含本次作業的說明文件(spec)、相關章節的上課講義與簡報。
 ## URL
 - [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/SkclAKwK6)
 - [online tool: markdown to pdf](https://md2pdf.netlify.app/)
 - [HW4 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw4/)
-- [HW4 Score - pp23s90](https://docs.google.com/spreadsheets/d/1JnFx8Byu1UGUygVXx1_bmjnZ2_kysicBdxEbUeFIY8E/edit?usp=sharing)
-- [HW4 Score - Public](https://docs.google.com/spreadsheets/d/1_tlAxMmPNZtAyxAvnj5Jn81Ez1vIqAUP_tz5d_SSduA/edit?usp=sharing)
-## 待辦
+- [hw4 score - pp23s90](https://docs.google.com/spreadsheets/d/1JnFx8Byu1UGUygVXx1_bmjnZ2_kysicBdxEbUeFIY8E/edit?usp=sharing)、[hw4 score - public](https://docs.google.com/spreadsheets/d/1_tlAxMmPNZtAyxAvnj5Jn81Ez1vIqAUP_tz5d_SSduA/edit?usp=sharing)
