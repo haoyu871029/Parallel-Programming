@@ -15,6 +15,8 @@ DNN model 被廣泛應用在各個領域，例如影像辨識、語音辨識、�
     - Layer2: Linear layer + Argmax
 
 而我們的目標是使用 OpenACC Directive 來撰寫 GPU 程式碼，做到平行化來加速 DNN model 的訓練過程。
+
+更詳細的作業說明請參考 lab5_spec.pdf
 ## 檔案說明
 - lab5
     > 此資料夾即為我在工作目錄下創建的 lab5 資料夾，包含 seq.cpp、openacc.cpp、Makefile 等檔案。
@@ -23,5 +25,5 @@ DNN model 被廣泛應用在各個領域，例如影像辨識、語音辨識、�
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 ## URL
+- [note (hackmd)](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJ6hXwaI6)
 - [OpenACC tutorial recording](https://drive.google.com/file/d/1yOeGrGYNzIiuozjlcMSrmV3DDbeJ0-nu/view)
-- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJ6hXwaI6)

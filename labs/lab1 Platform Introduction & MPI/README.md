@@ -3,6 +3,8 @@
 
 ![d1](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/d1.png)
 ![d2](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/d2.png)
+
+更詳細的作業說明請參考 lab1_spec.pdf
 ## Result
 ![res](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/res.png)
 
@@ -15,6 +17,6 @@
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 ## URL
-- [lab1 Scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab1/)
-- [cluster monitor](http://apollo.cs.nthu.edu.tw/monitor)
 - [note (hackmd)](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/rkoecl_aT)
+- [lab1 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab1/)
+- [cluster monitor](http://apollo.cs.nthu.edu.tw/monitor)

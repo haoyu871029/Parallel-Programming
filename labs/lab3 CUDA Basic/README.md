@@ -8,6 +8,8 @@
     > Used in image processing and computer vision, particularly within edge detection algorithms. Uses two 3x3 filter matrix gx, gy (one for horizontal changes, and one for vertical) which are convolved with the original image to calculate approximations of the derivatives. In this lab, we use 5x5 kernels.
 - Convolution Calculation
     > Iterate through the width and height of the image. For each pixel, multiply the filter matrix with original image element-wisely and sum them up.
+
+更詳細的作業說明請參考 lab3_spec.pdf
 ## Result
 ![resu](/labs/lab3%20CUDA%20Basic/images/resu.png)
 
@@ -20,6 +22,6 @@
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 ## URL
+- [note (hackmd)](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/ryIWGdqia)
+- [lab3 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab3/)
 - [NCHC Webpage](https://portal.apps.edu-cloud.nchc.org.tw), [NCHC Tutorial](https://hackmd.io/@enmingw32/pp-nchc)
-- [lab3 Scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab3/)
-- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/ryIWGdqia)

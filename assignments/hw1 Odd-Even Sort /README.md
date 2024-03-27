@@ -25,6 +25,6 @@ Ver_B: hw1_v3.cc
 - slides & announcement
     > 此資料夾有作業公告以及作業原檔說明，並包含本次作業的說明文件(spec)、相關章節的上課講義與簡報。
 ## URL
-- [hackmd: report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJpWJ-g06)
+- [report (hackmd)](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJpWJ-g06)
 - [hw1 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/hw1/)
 - [hw1 score - pp23s90](https://docs.google.com/spreadsheets/d/1JnFx8Byu1UGUygVXx1_bmjnZ2_kysicBdxEbUeFIY8E/edit?usp=sharing)、[hw1 score - public](https://docs.google.com/spreadsheets/d/1cltzY9Q27vwISqdnkgaXHOHMvuxJmBcrBPXhQuXs63U/edit#gid=0)

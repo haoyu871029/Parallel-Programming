@@ -1,7 +1,7 @@
 ## Description
-主題與 lab3 相同，透過 sobel operator 來做 image edge detection
+主題與 lab3 相同，透過 sobel operator 來做 image edge detection。而本次 lab 的目標，是透過實作 coalesced memory, lower precision, shared memory 等方式，去修改 lab3 實作的 CUDA program 或 TA 提供的 lab4 source code，以達到進一步的優化。
 
-而本次 lab 的目標，是透過實作 coalesced memory, lower precision, shared memory 等方式，去修改 lab3 實作的 CUDA program 或 TA 提供的 lab4 source code，以達到進一步的優化。
+更詳細的作業說明請參考 lab4_spec.pdf
 ## Result
 ![res](/labs/lab4%20CUDA%20Advance/images/res.png)
 - Coalesced Memory
@@ -18,6 +18,7 @@
 - images
     > 存放此 repo 中所有 README.md 用到的圖片。
 ## URL
-- [hackmd: note](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/S1Sts9X26)
+- [note (hackmd)](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/S1Sts9X26)
+- [lab4 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab4/)
+- [lab4 slides](https://docs.google.com/presentation/d/1AH-5ZQ32tTVJh7zge4Sqej6O6GhY8Gz-0iqZQ8exyNM/edit?usp=sharing)
 - [NCHC Webpage](https://portal.apps.edu-cloud.nchc.org.tw), [NCHC Tutorial](https://hackmd.io/@enmingw32/pp-nchc)
-- [lab3 scoreboard](https://apollo.cs.nthu.edu.tw/pp23/scoreboard/lab4/), [lab4 slides](https://docs.google.com/presentation/d/1AH-5ZQ32tTVJh7zge4Sqej6O6GhY8Gz-0iqZQ8exyNM/edit?usp=sharing)
