@@ -23,7 +23,7 @@
     > 
     > $ nvprof --metrics ipc,achieved_occupancy,sm_efficiency ./hw3-2 /home/pp23/share/hw3-2/cases/c15.1 ./c15.1.out ./profc15.log
 ## 作業原檔
-![截圖 2024-01-26 上午12.27.47](https://hackmd.io/_uploads/rkgz2-x9p.png)
+![3-2 source](/assignments/hw3%20All-Pairs%20Shortest%20Path/images/3-2.png)
 
 - 不知道為什麼裡面要多一個 hw3-2 資料夾然後放一樣的東西
 - hw3-2.cu 是給我們的 template

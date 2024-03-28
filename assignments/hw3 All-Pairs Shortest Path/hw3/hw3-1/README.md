@@ -11,4 +11,4 @@
 - Makefile
     > (編譯 hw3-1.cc) $ make hw3-1
 ## 作業原檔
-![截圖 2024-01-26 上午12.53.26](https://hackmd.io/_uploads/B14fGGxqp.png)
+![3-1 source](/assignments/hw3%20All-Pairs%20Shortest%20Path/images/3-1.png)
