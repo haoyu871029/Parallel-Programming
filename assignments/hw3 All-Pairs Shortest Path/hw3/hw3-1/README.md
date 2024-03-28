@@ -11,4 +11,6 @@
 - Makefile
     > (編譯 hw3-1.cc) $ make hw3-1
 ## 作業原檔
-![3-1 source](/assignments/hw3%20All-Pairs%20Shortest%20Path/images/3-1.png)
+(apollo) /home/pp23/share/hw3-3
+
+![3-1 source](/assignments/hw3%20All-Pairs%20Shortest%20Path/images/3-1_source.png)
