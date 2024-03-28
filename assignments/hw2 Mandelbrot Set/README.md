@@ -1,17 +1,17 @@
 ## Description
 本次作業為利用 Pthread、OpenMP、MPI 等方式來平行化 Mandelbrot Set 的計算，以減少程式執行時間，並透過 Vectorization 來作更進一步的優化。下圖說明為 Mandelbrot Set 的介紹與計算方式，測資會給定複座標的橫軸與縱軸範圍 ($x0,$x1,$y0,$y1)，以及輸出圖片的大小 ($w,$h)，work() 會先計算圖片中每個 pixel 代表的迭代計算結果 pixel_value，write_png() 再將所有 pixel_value 對應成顏色來輸出成圖片，即可得到 Mandelbrot Set 的圖形。
 
-![description](/assignments/hw2%20Mandelbrot%20Set/images/d.png)
+![description](/assignments/hw2%20Mandelbrot%20Set/images/description.png)
 
 更詳細的作業說明、實作要求與限制、報告規定等，請參考 hw2_spec.pdf
 ## Result
 測資為 10000 -2 2 -2 2 800 800，以下呈現主要實驗結果，其他實驗結果在 report 內描述。
 
-![strong scalability](/assignments/hw2%20Mandelbrot%20Set/images/ss.png)
+![strong scalability](/assignments/hw2%20Mandelbrot%20Set/images/strong_scalability.png)
 
 Pthread version (左) 與 Hybrid version (右) 都有做出不錯的 Strong Scalibility
 
-![run time](/assignments/hw2%20Mandelbrot%20Set/images/runtime.png)
+![run time](/assignments/hw2%20Mandelbrot%20Set/images/run_time.png)
 
 在測資不大的情況下，Hybrid version 的總執行時間較 Pthread version 長，而 Vectorization 確實可以降低總執行時間，但效果隨著 threads 數量增多而越不明顯。
 ## 檔案說明
