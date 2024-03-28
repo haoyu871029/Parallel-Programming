@@ -7,11 +7,11 @@
 ## Result
 測資為 10000 -2 2 -2 2 800 800，以下呈現主要實驗結果，其他實驗結果在 report 內描述。
 
-![strong scalability](/assignments/hw2%20Mandelbrot%20Set/images/strong_scalability.png)
+![strong scalability](/assignments/hw2%20Mandelbrot%20Set/images/ss.png)
 
 Pthread version (左) 與 Hybrid version (右) 都有做出不錯的 Strong Scalibility
 
-![run time](/assignments/hw2%20Mandelbrot%20Set/images/run_time.png)
+![run time](/assignments/hw2%20Mandelbrot%20Set/images/rt.png)
 
 在測資不大的情況下，Hybrid version 的總執行時間較 Pthread version 長，而 Vectorization 確實可以降低總執行時間，但效果隨著 threads 數量增多而越不明顯。
 ## 檔案說明
