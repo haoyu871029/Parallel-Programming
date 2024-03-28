@@ -10,7 +10,7 @@ Simple case：
 
 更詳細的作業說明、實作要求與限制、報告規定等，請參考 hw1_spec.pdf
 ## Result
-![res](/assignments/hw1%20Odd-Even%20Sort%20/images/res.png)
+![res](/assignments/hw1%20Odd-Even%20Sort%20/images/re.png)
 
 Ver_A: hw1_v2.cc 
 
