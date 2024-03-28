@@ -1,7 +1,7 @@
 ## Announcement
 ![announcement](/assignments/hw1%20Odd-Even%20Sort%20/images/announcement.png)
 ## 作業原檔
-/home/pp23/share/hw1
+(apollo) /home/pp23/share/hw1
 
 ![source](/assignments/hw1%20Odd-Even%20Sort%20/images/source.png)
 - testcases

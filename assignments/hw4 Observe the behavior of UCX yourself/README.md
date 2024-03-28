@@ -3,7 +3,7 @@ UCX 實作/支援 MPI processes 之間的溝通行為，本次作業的重點是
 
 UCP Objects 之間如何透過函式呼叫來互動，整理如下圖所示：(主程式為 ucp_hello_world.c)
 
-![architecture](/assignments/hw4%20Observe%20the%20behavior%20of%20UCX%20yourself/images/des.png)
+![architecture](/assignments/hw4%20Observe%20the%20behavior%20of%20UCX%20yourself/images/architecture.png)
 
 更詳細的作業說明、實作要求與限制、報告規定等，請參考 hw4_spec.pdf
 ## 檔案說明
