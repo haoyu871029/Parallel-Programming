@@ -1,12 +1,12 @@
 ## Description
 本次作業的應用是，若要填滿一個半徑為 r 的圓，需要多少個 pixels，詳細介紹及計算方式如下圖說明。而我們的實作目標就是利用 MPI APIs 去改寫原本的 sequential code，將計算部分分配給 processes 去處理，以減少程式的執行時間。
 
-![d1](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/d1.png)
-![d2](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/d2.png)
+![description_1](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/description_1.png)
+![description_2](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/description_2.png)
 
 更詳細的作業說明請參考 lab1_spec.pdf
 ## Result
-![res](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/res.png)
+![result](/labs/lab1%20Platform%20Introduction%20&%20MPI/images/result.png)
 
 由三筆測資的測試結果可以看出，透過 MPI APIs 的使用，我們將計算部分分配給 processes 去處理，結果也大幅降低了程式的執行時間。
 ## 檔案說明

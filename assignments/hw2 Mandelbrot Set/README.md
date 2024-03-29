@@ -5,7 +5,7 @@
 
 更詳細的作業說明、實作要求與限制、報告規定等，請參考 hw2_spec.pdf
 ## Result
-測資為 10000 -2 2 -2 2 800 800，以下呈現主要實驗結果，其他實驗結果在 report 內描述。
+測資為 10000 -2 2 -2 2 800 800
 
 ![strong scalability](/assignments/hw2%20Mandelbrot%20Set/images/strong_scalability.png)
 
@@ -14,6 +14,8 @@ Pthread version (左) 與 Hybrid version (右) 都有做出不錯的 Strong Scal
 ![run time](/assignments/hw2%20Mandelbrot%20Set/images/run_time.png)
 
 在測資不大的情況下，Hybrid version 的總執行時間較 Pthread version 長，而 Vectorization 確實可以降低總執行時間，但效果隨著 threads 數量增多而越不明顯。
+
+以上呈現主要實驗結果，其他實驗結果請參考 [report](https://hackmd.io/@u_46AznXS7-aLzZ7_uD4WQ/BJHnOwv96)
 ## 檔案說明
 - hw2
     > 此資料夾即為我在工作目錄下創建的 hw2 資料夾，裡面包含了 hw2a (Pthread version)、hw2b (Hybrid version)、hw2seq (Sequential version) 這幾個不同的實作方式。
