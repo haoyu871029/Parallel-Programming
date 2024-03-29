@@ -3,7 +3,7 @@
 
 更詳細的作業說明請參考 lab4_spec.pdf
 ## Result
-![res](/labs/lab4%20CUDA%20Advance/images/res.png)
+![result](/labs/lab4%20CUDA%20Advance/images/result.png)
 - Coalesced Memory
     > 將 block dimension 從原本的 16x16 改為 32x32，讓同一個 warp 中的 threads 存取連續的記憶體位置，以合併記憶體存取。
 - Lower Precision
