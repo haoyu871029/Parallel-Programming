@@ -1,5 +1,5 @@
 ## Announcement
-![announcemen](/labs/lab5%20OpenACC/images/announcement.png)
+![announcement](/labs/lab5%20OpenACC/images/announcement.png)
 ## 作業原檔
 (hades) /home/pp23/share/lab5
 
