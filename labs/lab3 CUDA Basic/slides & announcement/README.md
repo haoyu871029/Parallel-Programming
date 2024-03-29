@@ -1,5 +1,5 @@
 ## Announcement
-![ann](/labs/lab3%20CUDA%20Basic/images/ann.png)
+![announcement](/labs/lab3%20CUDA%20Basic/images/announcement.png)
 ## 作業原檔
 ![source](/labs/lab3%20CUDA%20Basic/images/source.png)
 - deviceQuery.cpp 可以得到目前 GPU 的相關資訊，根據 spec 的說明編譯並執行。
