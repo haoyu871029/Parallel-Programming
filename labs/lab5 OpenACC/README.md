@@ -1,5 +1,5 @@
 ## Description
-DNN model 被廣泛應用在各個領域，例如影像辨識、語音辨識、自然語言處理等。在本次 lab 中，DNN model 被用來辨識手寫數字（handwritten digits），下圖為我們 DNN model 的訓練流程，模型架構為 2 fully-connected layer：
+DNN model 被廣泛應用在各個領域，例如影像辨識、語音辨識、自然語言處理等。在本次 lab 中，DNN model 被用來辨識手寫數字（handwritten digits），下圖是我們 DNN model 的訓練流程，模型架構為 2 fully-connected layer：
 
 ![description](/labs/lab5%20OpenACC/images/description.png)
 
